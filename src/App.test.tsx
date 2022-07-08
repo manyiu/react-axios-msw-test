@@ -10,7 +10,6 @@ const handlers = [
   rest.get<TodosResponse>(
     `https://jsonplaceholder.typicode.com/todos/1`,
     (req, res, ctx) => {
-      console.log("I ran!");
       return res(
         ctx.json({
           userId: 1,
